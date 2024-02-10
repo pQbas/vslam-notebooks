@@ -1,5 +1,12 @@
-#pragma cling add_include_path("/usr/include/opencv4")
-#pragma cling add_library_path("/usr/include/opencv4")
+
+
+// #################################################################
+// ################           OPENCV              ##################
+// #################################################################
+
+
+#pragma cling add_include_path("/usr/include/opencv4") // Header files
+#pragma cling add_library_path("/usr/include/opencv4") // Libaries
 
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_aruco.so.4.2.0")
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_bgsegm.so.4.2.0")
@@ -49,3 +56,20 @@
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0")
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0")
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0")
+
+
+// ################################################################
+// ################           EIGEN              ##################
+// ################################################################
+
+#pragma cling add_include_path("/usr/include/eigen3") // Header files
+#pragma cling add_library_path("/usr/include/eigen3") // Libaries
+
+
+
+// ################################################################
+// ################          PANGOLIN            ##################
+// ################################################################
+
+#pragma cling add_include_path("/usr/include/pangolin") // Header files
+#pragma cling add_library_path("/usr/include/pangolin") // Libaries
