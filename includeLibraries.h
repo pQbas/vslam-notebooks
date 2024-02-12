@@ -71,5 +71,21 @@
 // ################          PANGOLIN            ##################
 // ################################################################
 
-#pragma cling add_include_path("/usr/include/pangolin") // Header files
-#pragma cling add_library_path("/usr/include/pangolin") // Libaries
+#pragma cling add_include_path("/home/pqbas/libraries/Pangolin/components/pango_core/include") // Header files
+#pragma cling add_library_path("/home/pqbas/libraries/Pangolin/components/pango_core/include") // Libaries
+
+
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_core.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_display.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_geometry.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_glgeometry.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_image.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_opengl.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_packetstream.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_plot.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_python.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_scene.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_tools.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_vars.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_video.so")
+#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_windowing.so")
