@@ -1,8 +1,13 @@
 
-
 // #################################################################
 // ################           OPENCV              ##################
 // #################################################################
+
+
+
+// #pragma cling add_include_path("/usr/include/x86_64-linux-gnu/bits/libc-header-start.h") // Header files
+// #pragma cling add_library_path("/usr/include/x86_64-linux-gnu") // Libaries
+// #pragma cling load("/usr/include/x86_64-linux-gnu/bits/")
 
 
 #pragma cling add_include_path("/usr/include/opencv4") // Header files
@@ -56,36 +61,3 @@
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_ximgproc.so.4.2.0")
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_xobjdetect.so.4.2.0")
 #pragma cling load("/usr/lib/x86_64-linux-gnu/libopencv_xphoto.so.4.2.0")
-
-
-// ################################################################
-// ################           EIGEN              ##################
-// ################################################################
-
-#pragma cling add_include_path("/usr/include/eigen3") // Header files
-#pragma cling add_library_path("/usr/include/eigen3") // Libaries
-
-
-
-// ################################################################
-// ################          PANGOLIN            ##################
-// ################################################################
-
-#pragma cling add_include_path("/home/pqbas/libraries/Pangolin/components/pango_core/include") // Header files
-#pragma cling add_library_path("/home/pqbas/libraries/Pangolin/components/pango_core/include") // Libaries
-
-
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_core.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_display.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_geometry.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_glgeometry.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_image.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_opengl.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_packetstream.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_plot.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_python.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_scene.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_tools.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_vars.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_video.so")
-#pragma cling load("/home/pqbas/libraries/Pangolin/build/libpango_windowing.so")
